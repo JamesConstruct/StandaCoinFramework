@@ -2,7 +2,7 @@
     "name": "jamesconstruct/standacoin-framework",
     "description": "Framework for the StandaCoin API.",
     "type": "framework",
-    "license": "GNU GPLv3.0",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "James Construct"
