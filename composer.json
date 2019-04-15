@@ -1,0 +1,19 @@
+{
+    "name": "Jamesconstruct/StandaCoinFramework",
+    "description": "Framework for the StandaCoin API.",
+    "type": "framework",
+    "license": "GNU GPLv3.0",
+    "authors": [
+        {
+            "name": "James Construct"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "StandaCoinFramework\\": "src/"
+        }
+    }
+}
