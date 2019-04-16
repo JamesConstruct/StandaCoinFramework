@@ -41,6 +41,16 @@ class App {
     }
 
 
+    private function __random_string($len=5)
+    {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $randstring = '';
+        for ($i = 0; $i < $len; $i++) {
+            $randstring .= $characters[rand(0, strlen($characters)-1)];
+        }
+        return $randstring;
+    }
+    
 
     private function __gen_nonce($timestamp) : String
     {
@@ -68,7 +78,7 @@ class App {
         $nonce = null;
         while ($nonce == null || in_array($nonce, $nonces['nonces']))
         {
-            $nonce = hexdec(rand(9999, 9999999));
+            $nonce = $this->__random_string(10);
         }
 
         array_push($nonces['nonces'], $nonce);
